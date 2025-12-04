@@ -1,23 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="./biography.html">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: "Epunda Slab", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin: auto;
+            background-image: url("https://i.pinimg.com/736x/0c/9e/9f/0c9e9fb9bdfc0503335b2a05d067b248.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
 
-    <p>
-    <input type="text" name="email" placeholder="enter email">
-    </p>
-    <p>
-        <input type="text" name="password" placeholder="enter password">
-    </p>
-    <p>
-    <a href="#forget password">forget password</a> 
-    </p>
-    <button>login</button>
-    </form>
+        }
+
+        .container {
+
+            width: 30%;
+            margin: 150px auto 0% auto;
+            text-align: center;
+            border: 2px solid black;
+            border-left: none;
+            border-right: none;
+            padding: 10px;
+        }
+
+        .fomr-group {
+            margin: 20px 0px;
+
+        }
+
+        .form-group input {
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            background-color: #e3c8f8;
+            border-width: thin;
+        }
+        .checkbox {
+            margin: 10px 0px;
+            text-align: left;
+        }
+        .checkbox a {
+            float: right;
+            color: rgb(138, 29, 29);
+        }
+        button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #e3c8f8;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <form action="./biography.html">
+            <div class="form-group">
+                Email ID:<br>
+                <input type="email" id="email" name="email" placeholder="Enter Email ID" />
+            </div>
+            <div class="form-group">
+                Password:<br>
+                <input type="password" id="password" name="password" placeholder="Enter Password" />
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="rememberMe" name="rememberMe" > Remember Me
+                <a href="./index.html">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
 </body>
+
 </html>
+   
