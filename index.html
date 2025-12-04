@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Page</title>
+
+    <!-- Unique Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -80,27 +84,62 @@
     </style>
 </head>
 <body>
-    <form action="./table.html"></form>
-    <p>
-        <input type="text" name="name" placeholder="Enter name"/>
-    </p>
-    <p>
-        <input type="email" name="email" placeholder="Enter email"/>
-    </p>
-    <p>
-       <input type="password" name="password" placeholder="Enter password"/>
-    </p>
-      <input type="date" name="dateofbirth"><br/>
-      <input type="file"><br/>
-      <input type="radio" name="gender"/> Male
-      <input type="radio" name="gender"/>Female <br/>
-      <input type="checkbox"/> 10th
-      <input type="checkbox" />Inter
-      <input type="checkbox" />Diploma
-      <input type="checkbox"/> Btech <br/>
-      <button>Submit</button>
-      </form>
+
+    <div class="container">
+        <h2>Registration</h2>
+
+        <form>
+            <!-- Name -->
+            <label>Name:</label>
+            <input type="text" placeholder="Enter full name" required>
+
+            <!-- Email -->
+            <label>Email:</label>
+            <input type="email" placeholder="Enter email" required>
+
+            <!-- Password -->
+            <label>Password:</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <div class="gender-group">
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <!-- Education -->
+            <label>Education:</label>
+            <select required>
+                <option value="">Select Education</option>
+                <option>10th</option>
+                <option>12th</option>
+                <option>Graduation</option>
+                <option>Post Graduation</option>
+            </select>
+
+            <!-- Profile Photo -->
+            <label>Upload Profile Picture:</label>
+            <input type="file" accept="image/*">
+
+            <!-- Select City -->
+            <label>Select City:</label>
+            <select required>
+                <option value="">Choose City</option>
+                <option>Mumbai</option>
+                <option>Delhi</option>
+                <option>Bengaluru</option>
+                <option>Kolkata</option>
+                <option>Chennai</option>
+                <option>Hyderabad</option>
+            </select>
+
+            <!-- Submit -->
+            <button class="submit-btn">Submit</button>
+        </form>
+    </div>
 
 </body>
-
 </html>
+      
